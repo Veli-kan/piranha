@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i&subset=cyrillic';
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+a {
+	text-decoration: none;	
+}
+
+li {
+	text-decoration: none;
+	list-style: none;
+}
+	/*Самое главное*/
+body {
+	font-family;font-family: 'Balsamiq Sans', cursive;
+	margin: 0;
+	padding: 0;
+	width:100%;
+	height: 100%;
+	background-image: url('images/back.jpg');
+	background-size:cover;	
+	background-attachment:fixed;
+	
+}
+	/*Навигация*/
+
+.llink {
+	position:relative;
+	opacity: 0.92;
+	background: #ebebeb;
+	font-size: 22px;
+	margin-top:1px;	
+	
+}
+
+.llink a {
+	margin: 0 4px;
+	text-decoration: none;
+	color: #000;
+	padding: 16px 18px;
+	font-size: 24px;	
+	transform: translate(0, -50%)
+}
+
+.llink a:hover {
+	text-decoration-line:underline;
+	
+}
+	/*Шапка*/
+
+.shapka {
+	display: flex;
+	margin: 0 auto;
+	width: 100%;	
+	background-color: #fff;
+	margin-bottom: 40px;
+	height:11%;
+	
+}
+
+.art {
+	max-width: 100%;
+	box-sizing: border-box;	
+	
+}
+
+.poisk {
+	position:relative;
+	
+	border-radius: 5px;
+	padding-left: 10px;
+	height: 50px;
+	width:15%;
+	
+	font-size: 22px;
+	float:left;
+	margin-bottom:15px;	
+}
+	/*Мэйн*/
+	
+.main_info {
+	position: block;		
+	background: #ebebeb;
+	
+	height: 2000px;
+	opacity: 0.92;
+	width: 1798px;
+	max-width: 1900px;
+	font-size:22px;	
+	
+	/*Tень*/
+	margin: 2.5em auto 1em;
+	padding: 1em;
+	border: 1px solid #ccc;
+	box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
+	border-radius:20px;
+	border: 7px outset #ccc;
+}
+
+.main_info p {
+	text-align:center;
+	
+}
+
+
+
+.chat_reklama {
+	display:block;
+	width:382px;
+	height: 86px;
+	float:right;
+	
+	margin: 1em;
+	padding: 1em;
+	box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
+	border-radius:20px;
+	border: 7px solid #ccc;
+
+}
+
+.chat_reklama h4 {
+	text-align:center;
+}
+	
+.chat_reklama img {
+	margin:0 auto;
+	margin-left:65px;
+	margin-top:7px;
+} 	
+
+	/*Левая колонка*/
+.left_column {
+	display:block;
+	flex-direction:column;
+	float:left;
+	max-width:1280px;
+}
+	
+	/*Регистрация*/
+.form-wrap {
+  width: 1250px;
+  background: #ffd500;
+  border-radius: 20px;
+  margin-top:23px;
+  box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
+}
+.form-wrap *{
+	transition: .1s linear
+
+}
+.profile {
+  width: 240px;
+  float: left;
+  text-align: center;
+  padding: 30px;
+}
+form {
+  background: white;
+  float: left;
+  width: calc(100% - 240px);
+  padding: 30px;
+  border-radius: 0 20px 20px 0;
+  color: #7b7b7b; 
+}
+.form-wrap:after, form div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+form div {
+  margin-bottom: 15px;
+  position: relative;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 400px;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+	/*Стилизация элементов формы */
+label, span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+input[type="text"], input[type="email"] {
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+
+.radio input {
+  position: absolute;  
+  opacity: 0;
+}
+
+.radio label {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  width: 50%;
+  float: left;
+  line-height: 40px;
+}
+
+.radio-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background: #e6e6e6;
+  border-radius: 50%;
+  text-align: center;
+}
+.male:before {
+  content: "\f058";
+  font-family: FontAwesome;
+  font-weight: bold;
+}
+.female:before {
+  font-family: FontAwesome;
+  font-weight: bold;
+  content: "\f058";
+
+}
+.radio label:hover input ~ .radio-control,
+.radiol input:focus ~ .radio-control {
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+.radio input:checked ~ .radio-control {
+  color: red;
+}
+select {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  -webkit-appearance: none; /*убираем галочку в webkit-браузерах*/
+  -moz-appearance: none; /*убираем галочку в Mozilla Firefox*/
+}
+select::-ms-expand {
+  display: none; /*убираем галочку в IE*/
+}
+.select-arrow {
+  position: absolute;
+  top: 38px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none; /*активизируем показ списка при нажатии на стрелку*/
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+
+select {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+}
+
+button {
+	padding: 10px 0;
+	border-width: 0;
+	display: block;
+	width: 120px;
+	margin: 25px auto 0;
+	background: #ffd500;
+	color: black;
+	font-size: 14px;
+	outline: none;
+	text-transform: uppercase;
+}
+
+/********************** добавляем форме адаптивность **********************/
+@media (max-width: 600px) {
+  .form-wrap {margin: 20px auto; max-width: 550px; width:100%;}
+  .profile, form {float: none; width: 100%;}
+  h1 {margin-top: auto; padding-bottom: 50px;}
+  form {border-radius: 0 0 20px 20px;}
+}
+	
+. {
+	display:block;
+
+}
+
+.profile img {
+	border: 2px solid #ff0000;.	
+}	
+		/*Приветствие*/
+	
+.preview {
+	display:flex;
+	position:relative;
+	width:93.57%;
+	z-index:-1;
+	float:left;
+	
+	margin: 1.1em;
+	padding: 1em;
+	box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
+	border-radius:20px;
+	border: 7px solid #ccc;
+}	
+	
+.preview h1 h2 {
+	font-size:27px;
+	word-wrap: break-word;	
+}
+.preview img {
+	height:350px;
+	width:350px;	
+}
+ /*Новости*/
+.facts {
+	float:left;
+	margin-left: 24px;
+	
+	padding: 1em;
+	box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
+	border-radius:20px;
+	border: 7px solid #ccc;
+	word-wrap: break-word;
+}
+.facts li {
+	list-style-type: none; /* Убираем маркеры у списка */
+	line-height:1.6;
+}
+.facts li:before {
+content: "※ "; /* Добавляем маркер списка */
+}
+
+.late_info {
+	display:block;
+	width:100%;	
+	clear:both;	
+	flex: 0 0 auto;
+}
+
+.footer_links ul a {
+	list-style:none;	
+	color:#fff;
+}

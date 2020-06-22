@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap');
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+a {
+	text-decoration: none;	
+}
+
+li {
+	text-decoration: none;
+	list-style: none;
+}
+	/*Самое главное*/
+		
+body {
+	font-family;font-family: 'Balsamiq Sans', cursive;
+	margin: 0;
+	padding: 0;
+	width:100%;
+	height: 100%;
+	background-image: url('images/back.jpg');
+	background-size:cover;	
+	background-attachment:fixed;
+	
+}
+	/*Навигация*/
+
+.llink {
+	position:relative;
+	opacity: 0.92;
+	background: #ebebeb;
+	font-size: 22px;
+	margin-top:1px;	
+	
+}
+
+.llink a {
+	margin: 0 4px;
+	text-decoration: none;
+	color: #000;
+	padding: 16px 18px;
+	font-size: 24px;	
+	transform: translate(0, -50%)
+}
+
+.llink a:hover {
+	text-decoration-line:underline;
+	
+}
+	/*Шапка*/
+
+.shapka {
+	display: flex;
+	margin: 0 auto;
+	width: 100%;	
+	background-color: #fff;
+	margin-bottom: 40px;
+	height:11%;
+	
+}
+
+.art {
+	max-width: 100%;
+	box-sizing: border-box;	
+	
+}
+
+.poisk {
+	position:relative;
+	
+	border-radius: 5px;
+	padding-left: 10px;
+	height: 50px;
+	width:15%;
+	
+	font-size: 22px;
+	float:left;
+	margin-bottom:15px;	
+}
+	/*Мэйн*/
+	
+.main_info{
+	position: block;		
+	background: #ebebeb;
+	
+	height: 2000px;
+	opacity: 0.92;
+	width: 1750px;
+	max-width: 1900px;
+	font-size:22px;	
+	
+	/*Tень*/
+	margin: 2.5em auto 1em;
+	padding: 1em;
+	border: 1px solid #ccc;
+	box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
+	border-radius:20px;
+	border: 7px outset #ccc;
+}
+	/*Выпадающее меню*/
+	
+nav ul {
+	margin-bottom:-15px;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	top: 0; left: 0; right: 0;
+	
+}
+nav ul li {
+	margin: 0px 40px 0 0;
+	display:inline-block;
+	opacity: 0.92;
+	background-color: #ebebeb;
+ }
+nav a {
+	display:block;
+	padding:0 10px;
+	color:#FFF;
+	font-size:30px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}	
+	/* Отображение списка при наведении */
+	
+nav ul li:hover  ul {
+	display:inherit;
+	z-index: 999999;
+	
+}			
+/* Первый уровень выпадающего списка */
+
+nav ul ul li {
+	min-width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+/*Правая колонка*/
+
+.right_column {
+	display:flex;
+	flex-direction: column;	
+}
+
+.chat_reklama {
+	display:block;
+	width:367px;
+	float:right;
+	
+	margin: 1.1em;
+	padding: 1em;
+	box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
+	border-radius:20px;
+	border: 7px solid #ccc;
+}
+
+.chat_reklama h4 {
+	text-align:center;
+	}
+	
+.chat_reklama img {
+	margin:0 auto;
+	margin-left:65px;
+	margin-top:7px;
+} 	
+.blogs {
+	display:block;
+	
+	margin: 1em;
+	padding: 1em;
+	box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
+	border-radius:20px;
+	border: 7px solid #ccc;
+}
+
+.blogs h4 {
+	text-align:center;
+}
+.author-details img {
+	float:left;
+}
+.author-details h5 span {
+	float:right;
+}
+
+	/*Левая колонка*/
+.left_column {
+	display:flex;
+	flex-direction:column;
+	float:left;
+	max-width:1280px;
+}
+	
+	/*Приветствие*/
+	
+.preview {
+	display:flex;
+	position:relative;
+	width:93.57%;
+	z-index:-1;
+	float:left;
+	
+	margin: 1.1em;
+	padding: 1em;
+	box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
+	border-radius:20px;
+	border: 7px solid #ccc;
+}	
+	
+.preview h1 h2 {
+	font-size:27px;
+	word-wrap: break-word;
+	
+}
+.preview img {
+	height:350px;
+	width:350px;
+	
+}
+ /*Новости*/
+.facts {
+	float:left;
+	margin-left: 24px;
+	
+	padding: 1em;
+	box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
+	border-radius:20px;
+	border: 7px solid #ccc;
+	word-wrap: break-word;
+}
+.facts li {
+	list-style-type: none; /* Убираем маркеры у списка */
+	line-height:1.6;
+}
+.facts li:before {
+content: "※ "; /* Добавляем маркер списка */
+}
+
+.late_info {
+	display:block;
+	width:100%;	
+	clear:both;
+}
+
+.footer_links ul a {
+	list-style:none;	
+	color:#fff;
+}
