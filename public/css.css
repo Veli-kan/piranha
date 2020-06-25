@@ -12,8 +12,7 @@ li {
 	text-decoration: none;
 	list-style: none;
 }
-	/*Самое главное*/
-		
+	/*Самое главное*/		
 body {
 	font-family;font-family: 'Balsamiq Sans', cursive;
 	margin: 0;
@@ -111,7 +110,7 @@ nav ul {
 	
 }
 nav ul li {
-	margin: 0px 40px 0 0;
+	margin: 0px 75px 0 0;
 	display:inline-block;
 	opacity: 0.92;
 	background-color: #ebebeb;

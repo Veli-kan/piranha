@@ -9,16 +9,22 @@ class ApiController extends Controller
 {
    public function SiteAction()
    {
-	return view('site');   
+	return view('site');
    }
-   
+
     public function LKAction()
    {
-	return view('lk');   
+	return view('lk');
    }
-   
+
+   public function reg()
+   {
+	return view('lk');
+   }
+
+
     public function ForumAction()
    {
-	return view('forum');   
+	return view('forum', ['forum'=> (new ArticleController())->show()]);
    }
 }

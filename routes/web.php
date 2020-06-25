@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',  'ApiController@SiteAction');
 Route::get('/lk',  'ApiController@LKAction');
 Route::get('/forum',  'ApiController@ForumAction');
+
+Route::get('/auth',  'AuthController@auth');
+Route::get('/reg',  'AuthController@reg');
+
+Route::middleware('/auth')->group(function ()
+    {
+    Route::get('/logout',  'AuthController@logout');
+    });
+
+
